@@ -149,24 +149,43 @@ body {
     overflow: hidden;
 }
 
-.carro_logo_container{
+.carro_titulo_container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.carro_año {
+    font-size: 2.5em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+.año_division {
+    display: inline-block;
+    border-left: 2px solid #28403D;
+    height: 5em;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.carro_titulo {
+    font-size: 2.5em;
+}
+
+.carro_logo_container{
+    text-align: center;
     margin-top: 10px;
 }
 
 .carro_logo {
-    width: 60px;
-    height: auto;
-    margin-left: 10px;
-}
-
-.carro_titulo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 .detalle_carro_lista{
