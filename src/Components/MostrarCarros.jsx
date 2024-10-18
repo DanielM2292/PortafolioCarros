@@ -14,13 +14,7 @@ const MostrarCarros = ({ carros }) => {
                 <span className="año_division"></span>
                 <div className="carro_titulo">
                     {carros.nombre}
-                    {carros.logo && (
-                        <img
-                            className="carro_logo"
-                            src={carros.logo}
-                            alt={carros.nombre}
-                        />
-                    )}
+
                 </div>
             </div>
             <div className="img_carro_container">

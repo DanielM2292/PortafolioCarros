@@ -152,6 +152,8 @@ body {
 .carro_titulo_container {
     display: flex;
     margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .carro_año {
@@ -173,19 +175,6 @@ body {
 
 .carro_titulo {
     font-size: 2.5em;
-}
-
-.carro_logo_container{
-    text-align: center;
-    margin-top: 10px;
-}
-
-.carro_logo {
-    width: 100px;
-    height: 50px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
 }
 
 .detalle_carro_lista{
