@@ -20,23 +20,20 @@ const Navbar = ({handleClickModelo}) => {
                 {carCate.map((categoria, index) => (
                     <li key={index} className={`nav-carro ${cateActiva === categoria.nombre ? 'active' : ''}`} onClick={() => handleClickCate(categoria.nombre)}>
                         <span className="nav-categoria">{categoria.nombre}</span>
-                        {cateActiva === categoria.nombre && (
-                            <ul className="submenu">
-                                {categoria.modelo.map((modelo, modeloIndex) => (
-                                    <li key={modeloIndex} className="submenu-modelo" onClick={() => {
-                                        console.log("Modelo clicado:", modelo);
-                                        handleClickModelo(modelo)
-                                    }}>
-                                        {modelo}
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
+                        <ul className={`submenu ${cateActiva === categoria.nombre ? 'active' : ''}`}>
+                            {categoria.modelo.map((modelo, modeloIndex) => (
+                                <li key={modeloIndex} className="submenu-modelo" onClick={() => {
+                                    console.log("Modelo clicado:", modelo);
+                                    handleClickModelo(modelo)
+                                }}>
+                                    {modelo}
+                                </li>
+                            ))}
+                        </ul>
                     </li>
                 ))}
             </ul>
         </nav>
-
     );
 };
 
