@@ -23,7 +23,6 @@ const Navbar = ({handleClickModelo}) => {
                         <ul className={`submenu ${cateActiva === categoria.nombre ? 'active' : ''}`}>
                             {categoria.modelo.map((modelo, modeloIndex) => (
                                 <li key={modeloIndex} className="submenu-modelo" onClick={() => {
-                                    console.log("Modelo clicado:", modelo);
                                     handleClickModelo(modelo)
                                 }}>
                                     {modelo}
