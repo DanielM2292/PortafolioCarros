@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Navbar from './components/Navbar'
+import Navbar from './Components/Navbar'
 import MostrarCarros from './Components/MostrarCarros'
 import skylineR34 from './images/SkylineR34.png';
 import Silvia from './images/Silvia.png';
