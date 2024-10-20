@@ -24,7 +24,7 @@ function App() {
       {pagina === 'entrada' && <PaginaEntrada />}
       {pagina === 'principal' && <PaginaPrincipal modeloSeleccionado={modeloSeleccionado} />}
     </div>
-  )
+  );
 }
 
 export default App;
