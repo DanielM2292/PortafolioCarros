@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import PaginaEntrada from './components/PaginaEntrada'
+import PaginaEntrada from './components/PaginaEntrada';
 import PaginaPrincipal from './PaginaPrincipal'
 import Navbar from './components/Navbar'
 import './App.css'
