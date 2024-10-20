@@ -12,7 +12,7 @@ import '../App.css';
 const PaginaEntrada = () => {
   const items = [
     <p className='txtEntrada'>Bienvenido,</p>,
-    <p className='txtEntrada'>Aquí encontrarás <br /> los mejores autos Japoneses <br /> del mundo</p>,
+    <p className='txtEntrada'>Aquí encontrarás <br /> los mejores autos Japoneses <br /> del mundo!!</p>,
   ];
 
   const logos = [
