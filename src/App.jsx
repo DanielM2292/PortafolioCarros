@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import PaginaEntrada from './components/PaginaEntrada';
-import PaginaPrincipal from './PaginaPrincipal'
-import Navbar from './components/Navbar'
-import './App.css'
+import PaginaPrincipal from './PaginaPrincipal';
+import Navbar from './components/Navbar';
+import './App.css';
 
 function App() {
   const [pagina, setPagina] = useState('entrada');
