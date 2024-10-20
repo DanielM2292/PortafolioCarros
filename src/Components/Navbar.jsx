@@ -18,7 +18,7 @@ const Navbar = ({ handleClickModelo, handleClickHome }) => {
         <nav className="navbar">
             <div className="nav-home-container">
                 <div className="nav-home" onClick={handleClickHome}>
-                    JPN-CARS
+                    CARS_JPN
                 </div>
             </div>
             <ul className="nav-lista">
