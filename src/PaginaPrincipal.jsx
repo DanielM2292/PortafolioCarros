@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import Navbar from './Components/Navbar'
+import React, { useEffect, useState } from 'react'
 import MostrarCarros from './Components/MostrarCarros'
 import skylineR34 from './images/SkylineR34.png';
 import Silvia from './images/Silvia.png';
@@ -15,8 +14,8 @@ import NSX from './images/NSX.png'
 import HondaS2000 from './images/HondaS2000.png';
 import './App.css'
 
-const PaginaPrincipal = () => {
-  const [ModeloSeleccionado, setModeloSeleccionado] = useState(null);
+const PaginaPrincipal = ({modeloSeleccionado}) => {
+  const [carro, setCarro] = useState(null);
 
   const carroDetalles = {
     'Skyline R34': {
@@ -129,20 +128,17 @@ const PaginaPrincipal = () => {
     },
   };
 
-  const handleModeloSeleccionado = (modelo) => {
-    setModeloSeleccionado(prevModelo => (prevModelo === modelo ? null : modelo));
-  };
+  useEffect(() => {
+    if (modeloSeleccionado) {
+      setCarro(carroDetalles[modeloSeleccionado])
+    }
+  }, [modeloSeleccionado])
 
 
   return (
     <div className='PagPrin'>
-      <div className='NavPrin'>
-        <Navbar handleClickModelo={handleModeloSeleccionado} />
-      </div>
       <div className='MostrarCarrosPrin'>
-        {ModeloSeleccionado && carroDetalles[ModeloSeleccionado] && (
-          <MostrarCarros carros={carroDetalles[ModeloSeleccionado]} />
-        )}
+        {carro && <MostrarCarros carros={carro} />}
       </div>
     </div>
   )
