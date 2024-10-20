@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PaginaPrincipal from './PaginaPrincipal';
-import PaginaEntrada from './components/PaginaEntrada.jsx';
-import Navbar from './components/Navbar.jsx';
+import PaginaEntrada from './Components/PaginaEntrada.jsx';
+import Navbar from './Components/Navbar.jsx';
 import './App.css';
 
 function App() {
